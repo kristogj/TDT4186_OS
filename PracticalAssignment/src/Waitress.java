@@ -11,7 +11,6 @@ public class Waitress implements Runnable {
      * @param waitingArea The waiting area for customers
      */
     Waitress(WaitingArea waitingArea) {
-        // TODO Implement required functionality
         this.waitingArea = waitingArea;
     }
 

@@ -39,8 +39,6 @@ public class SushiBar {
         servedOrders = new SynchronizedInteger(0);
         takeawayOrders = new SynchronizedInteger(0);
 
-        // TODO initialize the bar and start the different threads
-
         // First we need to start the Clock
         Clock clock  = new Clock(SushiBar.duration);
 
@@ -65,7 +63,6 @@ public class SushiBar {
             bw.close();
             System.out.println(Clock.getTime() + ", " + str);
         } catch (IOException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
     }

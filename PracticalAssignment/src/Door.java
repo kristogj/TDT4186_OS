@@ -11,7 +11,6 @@ public class Door implements Runnable {
      * @param waitingArea   The customer queue waiting for a seat
      */
     public Door(WaitingArea waitingArea) {
-        // TODO Implement required functionality
         this.waitingArea = waitingArea;
     }
 
@@ -21,7 +20,6 @@ public class Door implements Runnable {
      */
     @Override
     public void run() {
-        // TODO Implement required functionality
         int customerId = 1;
         // The Door should only produce new customers as long as the SushiBar isOpen
         while (SushiBar.isOpen){

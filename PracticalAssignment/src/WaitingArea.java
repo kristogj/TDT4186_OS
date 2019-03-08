@@ -40,7 +40,6 @@ public class WaitingArea {
         // Log what happened
         SushiBar.write(Thread.currentThread().getName() + "Customer " + customer.getCustomerID() + " is now waiting.");
 
-        // TODO Now there are more than one customer in the queue --> notify a Waitress
         // Notifies the next one in the Monitor queue (either it is a Door or a Waitress)
         notify();
 
@@ -64,7 +63,6 @@ public class WaitingArea {
         // Log what happened
         SushiBar.write(Thread.currentThread().getName() + "Customer " + fetchedCustomer.getCustomerID() + " is now waiting.");
 
-        // TODO Now there are one less customer in the queue --> notify the Door
         // Notifies the next one in the Monitor queue (either it is a Door or a Waitress)
         notify();
 

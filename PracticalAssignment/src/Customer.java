@@ -12,7 +12,6 @@ public class Customer {
      *  Each customer should be given a unique ID
      */
     public Customer(int id) {
-        // TODO Implement required functionality
         this.id = id;
     }
 
@@ -21,8 +20,6 @@ public class Customer {
      * Here you should implement the functionality for ordering food as described in the assignment.
      */
     public synchronized void order(){
-        // TODO Implement required functionality
-
         // Take the order
         // A customer has to order at least 1 and maximum SushiBar.maxOrder
         int numberOfOrders = (int)(Math.random()*SushiBar.maxOrder + 1);
@@ -41,7 +38,6 @@ public class Customer {
      * @return Should return the customerID
      */
     public int getCustomerID() {
-        // TODO Implement required functionality
         return this.id;
     }
 
